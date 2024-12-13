@@ -17,6 +17,6 @@ jobs:
         # 登录阿里云镜像仓库
         docker login --username=${{ secrets.ALIYUNCS_DOCKER_USERNAME }} --password=${{ secrets.ALIYUNCS_DOCKER_PASSWORD }} registry.cn-chengdu.aliyuncs.com
         # 使用Dockerfile构建镜像
-        docker build -t=registry.cn-chengdu.aliyuncs.com/cnkmmk/php:8.3-fpm-alpine3.21-Lychee https://github.com/cnkmmk/make_docker/raw/refs/heads/main/php8.3.14-fpm-alpine3.21-Lychee/Dockerfile
+        docker build -t=registry.cn-chengdu.aliyuncs.com/cnkmmk/php:8.3-fpm-alpine3.21-Lychee https://github.com/cnkmmk/make_docker/raw/refs/heads/main/php8.3-fpm-alpine3.21-Lychee/Dockerfile
         # 推送镜像到镜像仓库
         docker push registry.cn-chengdu.aliyuncs.com/cnkmmk/php:8.3-fpm-alpine3.21-Lychee

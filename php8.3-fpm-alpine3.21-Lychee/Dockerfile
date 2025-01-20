@@ -1,4 +1,4 @@
-FROM php:8.3.15-fpm-alpine3.21
+FROM php:8.3.16-fpm-alpine3.21
 LABEL maintainer="mercuryhg <docker@cnkmmk.eu.org>"
 
 RUN ( curl -sSLf https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions -o - || echo 'return 1' ) | sh -s \
